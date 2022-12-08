@@ -1,0 +1,53 @@
+html,
+body {
+  box-sizing: content-box;
+  margin: 0;
+  height: 100%;
+}
+main{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#map { 
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+}
+.h_idx{
+    width: 50%;
+}
+main h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
+    color: white;
+    -webkit-text-stroke: 1px rgb(40, 171, 223);
+}
+
+i.wi {
+  font-size: 20px;
+  color: white;
+  background-color: rgb(40, 171, 223);
+  padding: 10px;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: .3s;
+}
+
+i.wi:hover,
+i.wi:focus {
+  opacity: 0.8!important;
+  transition: .3s;
+}

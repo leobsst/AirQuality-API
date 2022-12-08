@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Air Kalitate</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        <script src="src/js/map.js" defer></script>
+        <link rel="stylesheet" href="src/css/main.css">
+        <link rel="stylesheet" href="src/css/weather-icons.css">
+        <link rel="stylesheet" href="src/css/weather-icons.min.css">
+        <link rel="stylesheet" href="src/css/weather-icons-wind.css">
+        <link rel="stylesheet" href="src/css/weather-icons-wind.min.css">
+    </head>
+    <body>
+        <main>
+            <div class="h_idx">
+                <h1 data-text="Carte">Carte</h1>
+            </div>
+            
+            <form method="GET">
+                <input type="text" name="city" id="city" placeholder="Entrer la ville que vous recherchez">
+                <input type="button" value="Chercher" onCLick='SearchCity()'>
+                <br><br>
+            </form>
+            <div id="map" class="map">
+
+            </div>
+            <span  id="city-aqi-container"></span>
+        </main>
+    </body>
+</html>
